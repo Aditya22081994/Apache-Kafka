@@ -1,5 +1,5 @@
 To Start Kafka Server:
--> Start the Zookeeper Server from Zookeeper Directory: bin\zookeeper-server-start.bat config/zookeeper.properties
+-> Start the Zookeeper Server from Kafka Directory: bin\zookeeper-server-start.bat config/zookeeper.properties
 -> Start the Kafka Server from Kafka Directory: bin\windows\kafka-server-start.bat config\server.properties
 
 To Create a topic:
