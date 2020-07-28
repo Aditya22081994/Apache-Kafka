@@ -1,0 +1,95 @@
+zookeeper-shell.bat localhost:2181 rmr /brokers/topics/your_topic  -----> For deleting topics
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 100 --topic demo   ---> create topic
+kafka-topics.bat --zookeeper localhost:2181 --delete --topic demo   ---> delete topic
+kafka-topics.bat --list --zookeeper localhost:2181    ---> topics list
+kafka-topics.bat --describe --topic demo --zookeeper localhost:2181   ---> Describe topic
+kafka-console-producer.bat --broker-list localhost:9092 --topic test  ---> Send data to topic
+kafka-consumer-groups.bat --bootstrap-server localhost:9092 --describe --group my-group
+
+
+ttsm.CostAllocationRequestReply
+netstat -a -n -o | find "2181"
+
+
+zookeeper-server-start.bat ../../config/zookeeper.properties
+
+kafka-server-start.bat ../../config/server.properties
+
+1) Get max offset for your topic (+ their partitions):
+
+Windows :
+bin/kafka-run-class.sh kafka.tools.GetOffsetShell --broker-list localhost:9092 --topic mytopic
+
+Linux :
+./kafka-run-class kafka.tools.GetOffsetShell --broker-list localhost:9092 --topic mytopic
+
+
+--> Change the number of partitions of a topic
+Windows :
+./bin/kafka-topics.sh --alter --zookeeper kf-ttsm-002-dev-001.use1-nprd-001.traxgrp.net:2181 --topic edi-large-file --partitions 17
+Linux :
+./kafka-topics --alter --zookeeper kf-ttsm-002-dev-001.use1-nprd-001.traxgrp.net:2181 --topic edi-large-file --partitions 17
+
+--> Check the number of partitions for a topic
+Windows :
+bin/kafka-run-class.sh kafka.tools.GetOffsetShell --broker-list kf-ttsm-002-dev-001.use1-nprd-001.traxgrp.net:9092 --topic edi-large-file
+Linux :
+./kafka-run-class kafka.tools.GetOffsetShell --broker-list kf-ttsm-002-dev-001.use1-nprd-001.traxgrp.net:9092 --topic edi-large-file
+
+
+mytopic:2:11
+mytopic:1:7
+mytopic:0:15
+mytopic:3:8
+
+2) Choose a topic (+ partition) and provide the offset - n as parameter:
+
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic mytopic --offset 10 --partition 0
+
+160592334979649761233911461799866714012
+166478403362469675452944780776599129252
+
+
+3224115
+3224115
+
+
+96171237951002583531628194626571607888
+
+78032277460469217878435353103871443567
+
+batchRequest.setId(nextval("attribute_code.ac_batch_request_seq"));
+attribute_code.ac_batch_request_detail_seq.nextval
+
+ac_batch_request_detail_seq
+ac_batch_request_seq
+
+
+cg_ref_codes
+invoice_header_accu_invoices
+
+
+Hostname	10.110.220.136	
+port		5432
+Username	skatakam
+password	welcome123
+db service	ttsm_master
+
+allocated_sid_charges
+---------------------
+allocation_order
+percentage
+gl_step
+
+to_char(REPORT.GET_PRESCAN_IH_CREATED_DATE(sid.invoice_header_id), 'YYYY-MM-DD') prescan_date
+(SELECT cap.period_description FROM invoice_header_accu_invoices ihai, carrier_invoice.client_period_log cpl, carrier_invoice.client_accounting_periods cap WHERE ih.id =ihai.invoice_header_id AND cpl.accu_invoice =ihai.accu_invoice AND cpl.client_acct_period_id=cap.id) accounting_period
+nvl((select accustar.pk_invoice_image.is_invoice_imaging_available(?,ih.id) from accustar.invoice_header_file ihf where ihf.invoice_header_id=sid.invoice_header_id and rownum=1), 'N') image_available
+carrier_invoice.invoice_headers.check_date
+
+
+
+
+
+
+edi_control_number --> Bcz sid.batch_id discontinued
+
