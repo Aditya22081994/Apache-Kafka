@@ -1,0 +1,7 @@
+GIT UNMERGE
+	COMMAND : 
+		git revert -m 1 <SHA-ID>
+	NOTES : 
+		We specify the merge using the SHA1 hash of the merge commit. The -m followed by the 1 indicates that we want to keep the parent side of the merge (the branch we are merging into).
+		The outcome of this revert is that Git will create a new commit that rolls back the changes from the merge.
+
