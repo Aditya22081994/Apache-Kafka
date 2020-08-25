@@ -1,0 +1,10 @@
+Big O Notations
+=======================
+Rules to follow:
+-> Different steps get added.
+-> Drop the constants (ex. O(2n) = O(n))
+-> Different inputs => Different variables (ex. if 2 arrays (a and b) are involved, then use O(a*b) for example)
+-> Drop non-dominant terms.
+
+Note:
+-> n in O(n) is only a variable, any letter will do.

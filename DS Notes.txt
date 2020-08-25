@@ -1,0 +1,12 @@
+﻿Dynamic Array: 
+-> The implementation in Java is ArrayList.
+-> A static array with set size is formed initially.
+-> If the elements are added and the array is filled to it's maximum capacity, then a new array is formed with double the size of old array.
+-> The contents of old array are copied to new array.
+-> The old array is removed and the pointer is moved to the new array which now has double the capacity of the old array.
+
+Amortized Analysis:
+-> Aggregate Method (brute-force sum)
+-> Banker's Method (tokens)
+-> Physicist's Method (potential function, Φ)
+Note: Nothing changes in the code, only runtime analysis
