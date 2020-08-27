@@ -5,9 +5,9 @@ Local:
 
 Production:
 Start the Zookeeper Server from Kafka Directory : 
-nohup ./bin/zookeeper-server-start /etc/kafka/zookeeper.properties > zookeper.log &
+nohup ./bin/zookeeper-server-start ./etc/kafka/zookeeper.properties > zookeper.log &
 Start the Kafka Server from Kafka Directory : 
-nohup ./bin/kafka-server-start /etc/kafka/server.properties > kafka.log &
+nohup ./bin/kafka-server-start ./etc/kafka/server.properties > kafka.log &
 
 Stop the Zookeeper Server from Kafka Directory : 
 ./bin/zookeeper-server-stop /etc/kafka/zookeeper.properties
@@ -56,7 +56,7 @@ Linux:
 ./kafka-consumer-groups --bootstrap-server kf-ttsm-002-dev-001.use1-nprd-001.traxgrp.net:9092 --describe --group noedi
 PROD1 ::: ./kafka-consumer-groups --bootstrap-server kf-ttsm-002-prd-001.use1-prd-001.traxgrp.net:9092 --describe --group noedi
 PROD2 ::: ./kafka-consumer-groups --bootstrap-server kf-ttsm-002-prd-001.use1-prd-001.traxgrp.net:9092 --describe --group ttsm.dataNorm
-SIT ::: ./kafka-consumer-groups --bootstrap-server kf-ttsm-002-sit-001.use1-nprd-001.traxgrp.net:9092 --describe --group noedi
+SIT ::: ./kafka-consumer-groups --bootstrap-server kf-ttsm-002-sit-001.use1-nprd-001.traxgrp.net:9092 --describe --group ttsm.noedi
 DEV ::: ./kafka-consumer-groups --bootstrap-server kf-ttsm-002-dev-001.use1-nprd-001.traxgrp.net:9092 --describe --group noedi
 
 TTSM 2.0 :

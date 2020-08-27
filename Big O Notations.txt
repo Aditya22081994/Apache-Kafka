@@ -8,3 +8,43 @@ Rules to follow:
 
 Note:
 -> n in O(n) is only a variable, any letter will do.
+
+
+
+
+
+==========================================================================================================================================================================
+
+O(1) :
+-> Called as Constant time. ( the time remains the same irrrespective of the input size).
+-> Independent of N (i.e. input size)
+-> No matter how the size of N increases, the running time remains the same.
+Code Example:
+-> len(my_list)    : here the length of the my_list does not matter as the action is performed only once and hence the runtime is not affected by the size of the list.
+-> mydict[some_key]  : here mydict is a dictionary in python, and the number of keys in mydict does not matter while finding the value of the key "some_key".
+
+
+
+O(N) :
+-> Called as Linear time. (the time grows linearly as the input size grows).
+-> Dependent of N (i.e. input size)
+-> As size of N increases, the running time increases in the same order.
+-> Example: If N increase 5 times in size, the running time increases 5 times.
+Code Example:
+-> for x in my_list:         : here the length of the my_list affects the runtime. As the size of my_list increases the runtime increases in the same order.
+
+
+O(N2) :
+-> Called as Quadratic time. (the time grows quadratically as the input size grows), consider a scenario where time N grows by 5 times then the runtime grows by 25 times.
+
+O(logN) :
+-> Dependent of N (i.e. input size)
+
+
+-> Constants are not considered.
+Note : In case of smaller input size, constants can consume significant runtime in context to the total runtime.
+
+
+Sites to Check:
+-> https://www.interviewcake.com/article/java/big-o-notation-time-and-space-complexity
+-> https://www.baeldung.com/java-algorithm-complexity
