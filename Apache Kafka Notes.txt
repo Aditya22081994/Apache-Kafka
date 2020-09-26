@@ -56,7 +56,7 @@ Linux:
 ./kafka-consumer-groups --bootstrap-server kf-ttsm-002-dev-001.use1-nprd-001.traxgrp.net:9092 --describe --group noedi
 PROD1 ::: ./kafka-consumer-groups --bootstrap-server kf-ttsm-002-prd-001.use1-prd-001.traxgrp.net:9092 --describe --group noedi
 PROD2 ::: ./kafka-consumer-groups --bootstrap-server kf-ttsm-002-prd-001.use1-prd-001.traxgrp.net:9092 --describe --group ttsm.dataNorm
-SIT ::: ./kafka-consumer-groups --bootstrap-server kf-ttsm-002-sit-001.use1-nprd-001.traxgrp.net:9092 --describe --group ttsm.noedi
+SIT ::: ./kafka-consumer-groups --bootstrap-server kf-ttsm-002-sit-001.use1-nprd-001.traxgrp.net:9092 --describe --group ttsm.no_edi
 DEV ::: ./kafka-consumer-groups --bootstrap-server kf-ttsm-002-dev-001.use1-nprd-001.traxgrp.net:9092 --describe --group noedi
 
 TTSM 2.0 :
